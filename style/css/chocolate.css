@@ -1,0 +1,122 @@
+/* This CSS is for responsive design using media queryies */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slice {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  /* This may mess with type and content later */
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  /* Peru */
+  background-color: #CD853F;
+  height: 80px;
+}
+.menu a {
+  float: right;
+  margin: auto;
+  text-decoration: none;
+  /* Black */
+  color: #000000;
+}
+
+.banner {
+  /* Sandy Brown */
+  background-color: #F4A460;
+  font-family: sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.content {
+  /* Blanched Almond */
+  background-color: #FFEBCD;
+  height: 600px;
+}
+
+.social {
+  /* Tan */
+  background-color: #D2B48C;
+}
+
+.feature-1 {
+  /* Sienna */
+  background-color: #BC8F8F;
+}
+
+.feature-2 {
+  /* Chocolate */
+  background-color: #D2691E;
+}
+
+.feature-3 {
+  /* Goldenrod */
+  background-color: #DAA520;
+}
+
+.feature-4 {
+  /* Brown */
+  background-color: #A52A2A;
+}
+
+.copy {
+  /* Navajo White */
+  background-color: #FFDEAD;
+  height: 50px;
+}
+
+@media only screen and (max-width: 400px) {
+  /* Mobile first design */
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .sign-up,
+  .feature-1,
+  .feature-2,
+  .feature-3,
+  .feature-4 {
+    width: 50%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .feature-1,
+  .feature-2,
+  .feature-3,
+  .feature-4 {
+    width: 25%;
+    /* So products show above footer */
+    order: 2;
+  }
+  .banner {
+    height: 400px;
+  }
+  .social {
+    height: 200px;
+    order: 1;
+  }
+  .content {
+    order: 2;
+  }
+  .copy {
+    order: 3;
+  }
+}
