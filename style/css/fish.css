@@ -20,8 +20,8 @@
 }
 
 .menu {
-  /* Peru */
-  background-color: #CD853F;
+  /* Aqua */
+  background-color: #7FFFD4;
   height: 80px;
 }
 .menu a {
@@ -33,8 +33,8 @@
 }
 
 .banner {
-  /* Sandy Brown */
-  background-color: #F4A460;
+  /* White */
+  background-color: #ffffff;
   font-family: sans-serif;
   font-style: italic;
   text-align: center;
@@ -47,8 +47,8 @@
 }
 
 .social {
-  /* Tan */
-  background-color: #D2B48C;
+  /* Plum */
+  background-color: #DDA0DD;
 }
 
 .feature-1 {
